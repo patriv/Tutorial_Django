@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang = 'es'>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ajax.js' %}"></script>
+
+
+</head>
+<body>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-8">
+			<div class = 'jumbotron'>
+				<p>Bienvenido!</p>
+				<a type = "button" class="btn btn-warning btn-responsive" style="width: 100px; height: auto; display: flex; justify-content: center ">Click me!</a>
+                <div ><p id = "view"> </p></div>
+			</div>
+			</div>
+		</div>
+
+
+	
+	</div>
+</body>
+</html>
