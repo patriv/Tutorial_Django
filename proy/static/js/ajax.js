@@ -6,12 +6,11 @@ $(document).ready(function(){
 
             {
 
-                url: "hola.txt",
+                url: "static/js/helloWord.txt",
 
                 success: function(result){
-
                     $("#view").html(result);
-
+                  
                 },
 
                 error: function(result){
