@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $("a").click(function(){
+    $("#aj").click(function(){
 
         $.ajax(
 
@@ -10,12 +10,38 @@ $(document).ready(function(){
 
                 success: function(result){
                     $("#view").html(result);
-                  
+
                 },
 
                 error: function(result){
 
                     $("#view").html("ERROR");
+
+                }
+
+            });
+
+        });
+
+    });
+
+
+$(document).ready(function(){
+
+    $("#guardar").click(function(){
+
+        $.ajax(
+
+            {
+
+                success: function(){
+                    $("#register").html("Registrado!");
+
+                },
+
+                error: function(result){
+
+                    $("#register").html("ERROR");
 
                 }
 

@@ -19,11 +19,22 @@
 			<div class = "col-md-8">
 			<div class = 'jumbotron'>
 				<p>Bienvenido!</p>
-				<a type = "button" class="btn btn-warning btn-responsive" style="width: 100px; height: auto; display: flex; justify-content: center ">Click me!</a>
+				<a id = 'aj' type = "button" class="btn btn-warning btn-responsive" style="width: 100px; height: auto; display: flex; justify-content: center ">Click me!</a>
+                <a class="btn btn-warning btn-responsive" href="{% url 'register' %}">Register</a>
                 <div ><p id = "view"> </p></div>
+
+
 			</div>
+                <hr>
+
+                <div>
+                     {% block content %}
+
+                     {% endblock %}
+                </div>
 			</div>
 		</div>
+	</div>
 
 
 	
